@@ -8,33 +8,32 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[#26335D] text-white font-sans">
+<body class="bg-[#26335D] text-white">
   <!-- Header -->
-  <header class="bg-white shadow-lg sticky top-0 z-50">
+  <header class="top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <!-- Logo -->
-        <div class="text-xl font-bold text-gray-800">
+        <div class="text-xl font-bold text-white">
           BrandName
         </div>
 
         <!-- Desktop Navigation -->
         <nav class="hidden md:flex space-x-8">
           <a href="#product"
-            class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors">Product</a>
+            class="text-white hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors">Product</a>
           <a href="#pricing"
-            class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors">Pricing</a>
+            class="text-white hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors">Pricing</a>
           <a href="#contact"
-            class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+            class="text-white hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors">Contact</a>
         </nav>
 
         <!-- Desktop Actions -->
         <div class="hidden md:flex items-center space-x-4">
+          <button class="text-white hover:text-white px-3 py-2 text-sm font-medium transition-colors">Login</button>
           <button
-            class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors">Login</button>
-          <button
-            class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg text-sm font-semibold transition-all transform hover:scale-105">
-            Join Us
+            class="bg-[#8D5CF6] hover:bg-blue-700 text-white px-6 py-2 rounded-lg text-sm font-semibold transition-all transform hover:scale-105">
+            Join Us →
           </button>
         </div>
 
@@ -69,11 +68,14 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div class="space-y-6">
+          <p class="text-[#8D5CF6] font-semibold text-[15px]">
+            Join Us
+          </p>
           <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
-            25K+ STUDENTS TRUST US
+            25K+ STUDENTS <br> TRUST US
           </h1>
           <p class="text-lg text-gray-300 leading-relaxed">
-            Our goal is to make online education work for everyone
+            Our goal is to make online education work <br> for everyone
           </p>
           <div class="flex flex-col sm:flex-row gap-3">
             <button
@@ -87,7 +89,7 @@
           </div>
         </div>
         <div class="flex justify-center lg:justify-end">
-          <img src="/images/boy.svg" alt="Student" class="w-full max-w-md h-auto">
+          <img src="/images/boy.svg" alt="Student" class="w-[704px] h-[682px]">
         </div>
       </div>
     </div>
@@ -95,14 +97,22 @@
 
   <!-- Video Section -->
   <section class="py-16 lg:py-24">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
+      <p class="font-bold text-[#8D5CF6] text-[15px]">
+        Practice Advice
+      </p>
       <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">Video in Live Action</h2>
       <p class="text-lg sm:text-xl text-gray-300 mb-12 leading-relaxed">
         Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics
       </p>
-      <div class="rounded-2xl overflow-hidden shadow-2xl">
-        <img src="/images/row.png" alt="Live Video" class="w-full h-auto">
+      <div>
+        <video controls poster="/images/row.png">
+          <source src="/images/video.mp4" type="video/mp4" />
+        </video>
       </div>
+      <!-- <div class="rounded-2xl overflow-hidden shadow-2xl">
+        <img src="/images/row.png" alt="Live Video" class="w-full h-auto">
+      </div> -->
     </div>
   </section>
 
@@ -110,6 +120,9 @@
   <section class="py-16 lg:py-24">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
+        <p class="font-bold text-[#8D5CF6] text-[15px]">
+          Practice Advice
+        </p>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">Every Client Matters</h2>
         <p class="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
           Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics
@@ -167,6 +180,9 @@
   <section class="py-16 lg:py-24">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
+        <p class="font-bold text-[#8D5CF6] text-[15px]">
+          Practice Advice
+        </p>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">Get Quality Education</h2>
         <p class="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
           Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics
@@ -175,45 +191,63 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow">
-        <img src="/images/fixed-height.svg" alt="Course" class="w-full h-48 object-cover">
+          <img src="/images/fixed-height.svg" alt="Course" class="w-full object-cover">
           <div class="p-6">
-            <p class="text-[#8D5CF6] font-medium mb-2">Welcome</p>
+            <div class="flex justify-between items-center">
+              <p class="text-[#8D5CF6] font-medium mb-2">Welcome</p>
+              <div class="flex items-center gap-2 border bg-[#26335D] px-3 py-1 rounded-[24px]">
+                <img src="/images/star.png" class="w-[16px] h-[16px]" alt="rating"> <span class="text-white font-bold">
+                  4.9 </span>
+              </div>
+            </div>
+
             <h3 class="text-black text-xl font-bold mb-4">2,769 online courses</h3>
             <p class="text-gray-600 mb-4 leading-relaxed">
               We focus on ergonomics and meeting you where you work. It's only a keystroke away.
             </p>
-            <div class="flex items-center justify-between mb-4">
-              <span class="text-gray-500">15 Sales</span>
-              <div class="flex items-center space-x-2">
-                <span class="text-gray-400 line-through">$16.48</span>
-                <span class="text-[#FF7B52] font-bold">$6.48</span>
-              </div>
+            <div class="flex mb-2 gap-2">
+              <img src="/images/Frame.svg" class="" alt="download"><span class="text-gray-500">15 Sales</span>
             </div>
+            <div class="flex items-center gap-2">
+              <span class="text-gray-400 line-through">$16.48</span>
+              <span class="text-[#FF7B52] font-bold">$6.48</span>
+            </div>
+          </div>
+          <div class="px-3 mb-4">
             <button
-              class="border-2 border-[#8D5CF6] text-[#8D5CF6] hover:bg-[#8D5CF6] hover:text-white px-6 py-2 rounded-full font-medium transition-all">
-              Learn More
+              class="border-2 border-[#8D5CF6] text-[#8D5CF6] hover:bg-[#8D5CF6] hover:text-white px-6 py-2 rounded-full font-medium transition-all flex gap-2 items-center">
+              Learn More <span><img src="/images/vector.png" alt="vector"></span>
             </button>
           </div>
         </div>
 
         <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow">
-          <img src="/images/product-cover.svg" alt="Course" class="w-full h-48 object-cover">
+          <img src="/images/product-cover.svg" alt="Course" class="w-full object-cover">
           <div class="p-6">
-            <p class="text-[#8D5CF6] font-medium mb-2">Welcome</p>
-            <h3 class="text-black text-xl font-bold mb-4">2,769 online courses</h3>
+            <div class="flex justify-between items-center">
+              <p class="text-[#8D5CF6] font-medium mb-2">Join Us</p>
+              <div class="flex items-center gap-2 border bg-[#26335D] px-3 py-1 rounded-[24px]">
+                <img src="/images/star.png" class="w-[16px] h-[16px]" alt="rating"> <span class="text-white font-bold">
+                  4.9 </span>
+              </div>
+            </div>
+
+            <h3 class="text-black text-xl font-bold mb-4">Books Liberary</h3>
             <p class="text-gray-600 mb-4 leading-relaxed">
               We focus on ergonomics and meeting you where you work. It's only a keystroke away.
             </p>
-            <div class="flex items-center justify-between mb-4">
-              <span class="text-gray-500">15 Sales</span>
-              <div class="flex items-center space-x-2">
-                <span class="text-gray-400 line-through">$16.48</span>
-                <span class="text-[#FF7B52] font-bold">$6.48</span>
-              </div>
+            <div class="flex mb-2 gap-2">
+              <img src="/images/Frame.svg" class="" alt="download"><span class="text-gray-500">15 Sales</span>
             </div>
+            <div class="flex items-center gap-2">
+              <span class="text-gray-400 line-through">$16.48</span>
+              <span class="text-[#FF7B52] font-bold">$6.48</span>
+            </div>
+          </div>
+          <div class="px-3">
             <button
-              class="border-2 border-[#8D5CF6] text-[#8D5CF6] hover:bg-[#8D5CF6] hover:text-white px-6 py-2 rounded-full font-medium transition-all">
-              Learn More
+              class="border-2 border-[#8D5CF6] text-[#8D5CF6] hover:bg-[#8D5CF6] hover:text-white px-6 py-2 rounded-full font-medium transition-all flex gap-2 items-center">
+              Learn More <span><img src="/images/vector.png" alt="vector"></span>
             </button>
           </div>
         </div>
@@ -225,6 +259,9 @@
   <section class="py-16 lg:py-24">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
+        <p class="font-bold text-[#8D5CF6] text-[15px]">
+          Practice Advice
+        </p>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">Watch our Courses</h2>
         <p class="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
           Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics
@@ -234,8 +271,8 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Pricing Card 1 -->
         <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow">
-          <div class="text-center mb-8">
-            <img src="/images/heart-circle.svg" alt="Plan" class="mx-auto mb-6 w-16 h-16">
+          <div class="mb-8">
+            <img src="/images/heart-circle.svg" alt="Plan" class="mb-6 w-16 h-16">
             <h3 class="text-black text-2xl font-bold mb-4">FREE</h3>
             <p class="text-gray-600 mb-4">Organize across all apps by hand</p>
             <div class="mb-2">
@@ -275,8 +312,11 @@
 
         <!-- Pricing Card 2 -->
         <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow">
-          <div class="text-center mb-8">
-            <img src="/images/heart-circle.svg" alt="Plan" class="mx-auto mb-6 w-16 h-16">
+          <div class="mb-8">
+            <div class="relative">
+               <img src="/images/new.svg" alt="Plan" class="mb-6 w-18 h-16 -right-12 absolute -top-12">
+               <img src="/images/heart-circle.svg" alt="Plan" class="mb-6 w-16 h-16">
+            </div>
             <h3 class="text-black text-2xl font-bold mb-4">FREE</h3>
             <p class="text-gray-600 mb-4">Organize across all apps by hand</p>
             <div class="mb-2">
@@ -316,8 +356,8 @@
 
         <!-- Pricing Card 3 -->
         <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow">
-          <div class="text-center mb-8">
-            <img src="/images/heart-circle.svg" alt="Plan" class="mx-auto mb-6 w-16 h-16">
+          <div class="mb-8">
+            <img src="/images/heart-circle.svg" alt="Plan" class="mb-6 w-16 h-16">
             <h3 class="text-black text-2xl font-bold mb-4">FREE</h3>
             <p class="text-gray-600 mb-4">Organize across all apps by hand</p>
             <div class="mb-2">
@@ -411,11 +451,11 @@
         Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics
       </p>
 
-      <form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+      <form class="flex flex-col sm:flex-row max-w-lg mx-auto border border-white rounded-md">
         <input type="email" placeholder="Your Email"
-          class="flex-1 px-6 py-4 rounded-lg text-gray-900 border border-gray-300 focus:ring-2 focus:ring-[#8D5CF6] focus:border-transparent" />
+          class="flex-1 px-6 py-4 text-gray-900 border border-gray-300 focus:ring-2 focus:ring-[#8D5CF6] focus:border-transparent rounded-l-md " />
         <button type="submit"
-          class="bg-[#8D5CF6] hover:bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105">
+          class="bg-[#8D5CF6] hover:bg-purple-600 text-white px-8 py-4 font-semibold transition-all transform hover:scale-105 rounded-r-md">
           Subscribe
         </button>
       </form>
@@ -471,23 +511,40 @@
         </div>
 
         <!-- Contact -->
-        <div>
+        <div class="">
           <h4 class="font-bold text-lg mb-6">Get in Touch</h4>
           <ul class="space-y-3">
-            <li class="text-gray-600">(480) 555-0103</li>
-            <li> 437 Washington Ave. Manchester, KY</li>
-            <li> debra.holt@example.com</li>
+            <li class="flex items-center">
+              <img src="/images/phone.png" alt="phone" class="w-5 h-5"> <span class="text-gray-600 px-2">(480) 555-0103</span>
+            </li>
+            <li class="flex items-center">
+              <img src="/images/location.png" alt="location" class="w-5 h-5"> <span class="px-2"> 437 Washington Ave. Manchester, KY</span>
+            </li>
+            <li class="flex items-center">
+              <img src="/images/email.png" alt="email" class="w-5 h-5"> <span class="px-2"> debra.holt@example.com</span>
+            </li>
+
+
+
           </ul>
         </div>
       </div>
-      </footer>
-        <script>
-          const menuBtn = document.getElementById('menu-btn');
-          const mobileNav = document.getElementById('mobile-nav');
+      <div class="flex sm:px-6 mt-20 justify-between text-gray-600 bg-[#FAFAFA]">
+        <p>
+          Made With Love By Figmaland All Right Reserved
+        </p>
+        <img src="/images/socialmedia.png" alt="social media" class="bg-[#FAFAFA]">
+      </div>
+  </footer>
 
-          menuBtn.addEventListener('click', () => {
-            mobileNav.classList.toggle('hidden');
-          });
-        </script>
-      </body>
-      </html>
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    menuBtn.addEventListener('click', () => {
+      mobileNav.classList.toggle('hidden');
+    });
+  </script>
+</body>
+
+</html>
